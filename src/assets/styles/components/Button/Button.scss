@@ -1,0 +1,87 @@
+.btn {
+  border: none;
+  outline: none;
+  filter: brightness(1);
+  padding: 1rem;
+  font-size: 1.6rem;
+  height: 5.6rem;
+  border-radius: 2rem;
+  font-family: 'Lalezar', cursive;
+  &:hover:enabled {
+    cursor: pointer;
+  }
+
+  &:hover:disabled {
+    cursor: no-drop;
+  }
+  &:active:enabled {
+    filter: brightness(0.9);
+    transition: 0.3s;
+  }
+
+  &--primary {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+
+  &--secondary {
+    background-color: var(--secondary);
+    color: var(--light);
+  }
+
+  &--success {
+    background-color: var(--success);
+    color: var(--light);
+  }
+
+  &--info {
+    background-color: var(--info);
+    color: var(--light);
+  }
+
+  &--warning {
+    background-color: var(--warning);
+    color: var(--light);
+  }
+
+  &--danger {
+    background-color: var(--danger);
+    color: var(--light);
+  }
+
+  &--light {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+
+  &--dark {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  &--official {
+    background-color: var(--official);
+    color: var(--light);
+  }
+
+  &--gray {
+    background-color: var(--gray);
+    color: var(--dark);
+  }
+
+  &--small {
+    width: 5.6rem;
+  }
+
+  &--normal {
+    width: 16rem;
+  }
+
+  &--large {
+    width: 21rem;
+    height: 6.4rem !important;
+  }
+
+  &--free {
+    width: 100%;
+  }
+}
